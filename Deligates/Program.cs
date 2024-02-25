@@ -24,3 +24,12 @@ while (!int.TryParse(s2, out y))
     s2 = Console.ReadLine();
 }
 multiCastDel.MultiCastDeligate(x, y);
+
+Console.WriteLine("------------------------------------------------");
+Console.WriteLine("Examples for built in deligates\n\nEnter you name");
+BuiltInDel builtInDel = new BuiltInDel();
+string name = Console.ReadLine();
+builtInDel.greet(name);
+int chars = builtInDel.stringLength(name);
+Console.WriteLine($"Total Charaters in names with Func deligate is {chars}");
+Console.WriteLine($"Name length is even : {builtInDel.isEven(chars)}");
