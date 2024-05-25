@@ -11,10 +11,13 @@ namespace Deligates.Classes
     {
         public MyDelegate SimapleDeligate = new MyDelegate(PrintMessage);
 
-        static void PrintMessage(string message)
+        private static void PrintMessage(string message)
         {
             Console.WriteLine(message);
         }
-
+        public void Parent(string Message)
+        {
+            PrintMessage(Message);
+        }
     }
 }
