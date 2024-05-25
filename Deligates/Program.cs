@@ -4,6 +4,7 @@ Console.WriteLine("Application has been started.!!!");
 SimpleDelTest simpleDel = new SimpleDelTest();
 Console.WriteLine("Calling Simple Deligate");
 simpleDel.SimapleDeligate("This is Message passed to Simple Deligate");
+//simpleDel.Parent("This is message passed to parent mathod");
 Console.WriteLine("-------------------------------------------------------");
 Console.WriteLine("Calling Multi Cast Deligate");
 MultiCastDel multiCastDel = new MultiCastDel();
